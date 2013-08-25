@@ -1,0 +1,15 @@
+aws:
+  access_key_id:     YOUR_ACCESS_KEY_ID
+  secret_access_key: YOUR_SECRET_ACCESS_KEY
+
+  machines:
+    defaults: &machine_defaults
+      region:   ap-northeast-1
+      keypair:  jdoe
+      ami:      ami-51129850
+      username: ubuntu
+      instance_type:    t1.micro
+      private_key_path: ~/.ssh/jdoe.pem
+
+    develop:
+      <<: *machine_defaults
