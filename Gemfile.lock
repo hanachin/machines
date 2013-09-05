@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/matschaffer/knife-solo.git
-  revision: e69b2bf05a726a737ae6cbe23b6c99a02ee9423c
+  remote: git://github.com/matschaffer/knife-solo.git
+  revision: f0460a2c4578eeeec202f80b2bc23d3536c7cb04
   branch: master
   submodules: true
   specs:
@@ -82,7 +82,7 @@ GEM
     little-plugger (1.1.3)
     logging (1.6.2)
       little-plugger (>= 1.1.3)
-    mime-types (1.24)
+    mime-types (1.25)
     minitar (0.5.4)
     mixlib-authentication (1.3.0)
       mixlib-log
