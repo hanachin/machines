@@ -28,6 +28,10 @@ Vagrant.configure('2') do |config|
     develop.vm.box_url = 'http://files.vagrantup.com/precise64.box'
     develop.vm.network :private_network, ip: "192.168.33.10"
     develop.vm.synced_folder '~/work', '/vagrant_data'
+    develop.vm.provision :chef_solo do |chef|
+      chef.roles_path = "roles"
+      chef.add_role 'develop'
+    end
   end
 
   config.vm.define :remote do |remote|
