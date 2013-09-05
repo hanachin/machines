@@ -23,11 +23,11 @@ Vagrant.configure('2') do |config|
     override.ssh.private_key_path = settings['aws']['machines']['defaults']['private_key_path']
   end
 
-  config.vm.define :local do |local|
-    local.vm.box     = 'pricise64'
-    local.vm.box_url = 'http://files.vagrantup.com/precise64.box'
-    local.vm.network :private_network, ip: "192.168.33.10"
-    local.vm.synced_folder '~/work', '/vagrant_data'
+  config.vm.define :develop do |develop|
+    develop.vm.box     = 'pricise64'
+    develop.vm.box_url = 'http://files.vagrantup.com/precise64.box'
+    develop.vm.network :private_network, ip: "192.168.33.10"
+    develop.vm.synced_folder '~/work', '/vagrant_data'
   end
 
   config.vm.define :remote do |remote|
