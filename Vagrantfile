@@ -39,14 +39,14 @@ Vagrant.configure('2') do |config|
   # vagrant plugin install vagrant-berkshelf
   config.berkshelf.enabled = true
 
-  # config.vm.provision :chef_solo do |chef|
+  config.vm.provision :chef_solo do |chef|
+    chef.add_recipe 'heroku'
   #   chef.cookbooks_path = "./cookbooks"
   #   chef.roles_path     = "./roles"
   #   chef.data_bags_path = "./data_bags"
-  #   chef.add_recipe "mysql"
   #   chef.add_role   "web"
   #
   #   # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
-  # end
+  end
 end
