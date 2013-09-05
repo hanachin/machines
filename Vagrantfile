@@ -36,6 +36,9 @@ Vagrant.configure('2') do |config|
   # vagrant plugin install vagrant-omnibus
   config.omnibus.chef_version = '11.6.0'
 
+  # vagrant plugin install vagrant-berkshelf
+  config.berkshelf.enabled = true
+
   # config.vm.provision :chef_solo do |chef|
   #   chef.cookbooks_path = "./cookbooks"
   #   chef.roles_path     = "./roles"
