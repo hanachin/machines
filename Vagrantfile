@@ -10,7 +10,7 @@ Vagrant.configure('2') do |config|
     vb.customize ['modifyvm', :id, '--memory', '1024']
   end
 
-  # https://github.com/mitchellh/vagrant-aws
+  # vagrant plugin install vagrant-aws
   config.vm.provider :aws do |aws, override|
     aws.access_key_id     = settings['aws']['access_key_id']
     aws.secret_access_key = settings['aws']['secret_access_key']
