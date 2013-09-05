@@ -11,5 +11,8 @@ if platform?("ubuntu")
   package('wget') do
     action :install
   end
-  execute('wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh')
+
+  execute('wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh') do
+    not_if 'test -x /usr/local/heroku/bin/heroku'
+  end
 end
