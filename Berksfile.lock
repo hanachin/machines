@@ -1,0 +1,7 @@
+{
+  "sources": {
+    "heroku": {
+      "path": "./site-cookbooks/heroku"
+    }
+  }
+}
