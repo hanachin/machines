@@ -6,3 +6,6 @@ gem 'knife-solo', github: 'matschaffer/knife-solo', branch: 'master', submodules
 gem 'knife-solo_data_bag'
 gem 'berkshelf'
 gem 'serverspec'
+
+# for Mac
+gem 'brewdler'
