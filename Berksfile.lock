@@ -1,5 +1,10 @@
 {
   "sources": {
+    "chef-solo-search": {
+      "locked_version": "0.4.0",
+      "git": "git://github.com/edelight/chef-solo-search.git",
+      "ref": "a28e7f25ab4afb53f9a55dd49d8b1277d0374c29"
+    },
     "heroku": {
       "path": "./site-cookbooks/heroku"
     },
@@ -10,6 +15,9 @@
     },
     "zsh": {
       "locked_version": "1.0.0"
+    },
+    "oh-my-zsh": {
+      "locked_version": "0.4.2"
     },
     "dev-users": {
       "path": "./site-cookbooks/dev-users"
@@ -25,6 +33,24 @@
     },
     "chef_handler": {
       "locked_version": "1.1.4"
+    },
+    "git": {
+      "locked_version": "2.6.0"
+    },
+    "dmg": {
+      "locked_version": "2.0.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "yum": {
+      "locked_version": "2.3.2"
+    },
+    "runit": {
+      "locked_version": "1.2.0"
+    },
+    "user": {
+      "locked_version": "0.3.0"
     },
     "users": {
       "locked_version": "1.5.2"

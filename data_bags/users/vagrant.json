@@ -6,6 +6,7 @@
   "raw_data": {
     "id": "vagrant",
     "name": "vagrant",
-    "shell": "/usr/bin/zsh"
+    "shell": "/usr/bin/zsh",
+    "oh-my-zsh-theme": "agnoster"
   }
 }

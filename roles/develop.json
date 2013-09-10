@@ -22,7 +22,9 @@
   },
   "chef_type": "role",
   "run_list": [
+    "chef-solo-search",
     "zsh",
+    "oh-my-zsh",
     "dev-users",
     "heroku",
     "ruby_build",
