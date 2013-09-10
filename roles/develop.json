@@ -11,7 +11,8 @@
         "gems": {
           "2.0.0-p247": [
             { "name": "bundler" },
-            { "name": "vulcan" }
+            { "name": "vulcan" },
+            { "name": "hub" }
           ]
         }
       }]
