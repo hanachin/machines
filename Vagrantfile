@@ -30,6 +30,7 @@ Vagrant.configure('2') do |config|
     develop.vm.synced_folder '~/work', '/vagrant_data'
     develop.vm.provision :chef_solo do |chef|
       chef.roles_path = "roles"
+      chef.data_bags_path = "data_bags"
       chef.add_role 'develop'
     end
   end
