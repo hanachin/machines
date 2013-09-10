@@ -8,6 +8,9 @@
       "git": "git://github.com/fnichol/chef-rbenv.git",
       "ref": "9afb4e5da2e6212504a12de3bbbd410cd96100f6"
     },
+    "zsh": {
+      "locked_version": "1.0.0"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },

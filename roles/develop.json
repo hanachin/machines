@@ -22,6 +22,7 @@
   },
   "chef_type": "role",
   "run_list": [
+    "zsh",
     "heroku",
     "ruby_build",
     "rbenv::user"
