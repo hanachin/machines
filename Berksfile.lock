@@ -22,6 +22,9 @@
     "oh-my-zsh": {
       "locked_version": "0.4.2"
     },
+    "dev": {
+      "path": "./site-cookbooks/dev"
+    },
     "dev-users": {
       "path": "./site-cookbooks/dev-users"
     },
