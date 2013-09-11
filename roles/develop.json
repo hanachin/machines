@@ -3,6 +3,9 @@
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "nodejs": {
+      "version": "0.10.15"
+    },
     "rbenv": {
       "user_installs": [{
         "user": "vagrant",
@@ -28,7 +31,8 @@
     "dev-users",
     "heroku",
     "ruby_build",
-    "rbenv::user"
+    "rbenv::user",
+    "nodejs"
   ],
   "env_run_lists": {
   }
