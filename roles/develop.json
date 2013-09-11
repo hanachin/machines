@@ -3,6 +3,11 @@
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "postgresql": {
+      "password": {
+        "postgres": "ilovepg"
+      }
+    },
     "nodejs": {
       "version": "0.10.15"
     },
@@ -26,6 +31,7 @@
   "chef_type": "role",
   "run_list": [
     "chef-solo-search",
+    "dev-database",
     "zsh",
     "oh-my-zsh",
     "dev-users",

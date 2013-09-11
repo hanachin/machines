@@ -25,6 +25,9 @@
     "dev-users": {
       "path": "./site-cookbooks/dev-users"
     },
+    "dev-database": {
+      "path": "./site-cookbooks/dev-database"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },
@@ -60,6 +63,24 @@
     },
     "users": {
       "locked_version": "1.5.2"
+    },
+    "database": {
+      "locked_version": "1.4.0"
+    },
+    "mysql": {
+      "locked_version": "3.0.4"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "postgresql": {
+      "locked_version": "3.0.4"
+    },
+    "aws": {
+      "locked_version": "0.101.4"
+    },
+    "xfs": {
+      "locked_version": "1.1.0"
     }
   }
 }
