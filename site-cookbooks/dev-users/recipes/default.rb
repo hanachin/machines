@@ -9,6 +9,6 @@
 
 vagrant = data_bag_item('users', 'vagrant')
 
-user vagrant['name'] do
+user vagrant['id'] do
   shell vagrant['shell']
 end

@@ -5,7 +5,6 @@
   "data_bag": "users",
   "raw_data": {
     "id": "vagrant",
-    "name": "vagrant",
     "shell": "/usr/bin/zsh",
     "oh-my-zsh-theme": "agnoster"
   }
