@@ -41,7 +41,8 @@
     "rbenv::user",
     "nodejs",
     "imagemagick",
-    "imagemagick::devel"
+    "imagemagick::devel",
+    "phantomjs::default"
   ],
   "env_run_lists": {
   }

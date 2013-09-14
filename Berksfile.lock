@@ -34,6 +34,9 @@
     "imagemagick": {
       "locked_version": "0.2.2"
     },
+    "phantomjs": {
+      "locked_version": "1.0.2"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },
@@ -87,6 +90,12 @@
     },
     "xfs": {
       "locked_version": "1.1.0"
+    },
+    "chocolatey": {
+      "locked_version": "0.0.5"
+    },
+    "powershell": {
+      "locked_version": "1.1.2"
     }
   }
 }
