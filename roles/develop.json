@@ -39,7 +39,9 @@
     "heroku",
     "ruby_build",
     "rbenv::user",
-    "nodejs"
+    "nodejs",
+    "imagemagick",
+    "imagemagick::devel"
   ],
   "env_run_lists": {
   }

@@ -31,6 +31,9 @@
     "dev-database": {
       "path": "./site-cookbooks/dev-database"
     },
+    "imagemagick": {
+      "locked_version": "0.2.2"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },
