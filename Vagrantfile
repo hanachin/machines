@@ -27,6 +27,9 @@ Vagrant.configure('2') do |config|
     develop.vm.box     = 'pricise64'
     develop.vm.box_url = 'http://files.vagrantup.com/precise64.box'
     develop.vm.network :private_network, ip: "192.168.33.10"
+    develop.vm.network :forwarded_port, guest: 3000, host: 33000
+    develop.vm.network :forwarded_port, guest: 80,   host: 30080
+    develop.vm.network :forwarded_port, guest: 8080, host: 38080
     develop.vm.synced_folder '~/work', '/vagrant_data'
     develop.vm.provision :chef_solo do |chef|
       chef.roles_path = "roles"
