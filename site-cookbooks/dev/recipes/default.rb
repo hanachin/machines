@@ -9,3 +9,4 @@
 include_recipe 'dev::emacs'
 include_recipe 'dev::git-viewers'
 include_recipe 'dev::source-reading'
+include_recipe 'dev::slimerjs'
