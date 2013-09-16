@@ -18,6 +18,7 @@ brew 'casperjs'
 # # vm
 # cask 'virtualbox'
 # cask 'vagrant'
+brew 'curl-ca-bundle' # vagrant-digitalocean
 
 # # browsers
 # cask 'google-chrome'
