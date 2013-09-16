@@ -1,3 +1,5 @@
+include_recipe 'apt'
+
 slimerjs_required_packages = %w(xvfb firefox dbus-x11 xserver-xorg-core xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic unzip)
 slimerjs_required_packages.each do |pkg|
   package pkg do
