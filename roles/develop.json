@@ -42,7 +42,8 @@
     "nodejs",
     "imagemagick",
     "imagemagick::devel",
-    "phantomjs::default"
+    "phantomjs::default",
+    "slimerjs"
   ],
   "env_run_lists": {
   }

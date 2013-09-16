@@ -31,6 +31,9 @@
     "dev-database": {
       "path": "./site-cookbooks/dev-database"
     },
+    "slimerjs": {
+      "path": "./site-cookbooks/slimerjs"
+    },
     "imagemagick": {
       "locked_version": "0.2.2"
     },
