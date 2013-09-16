@@ -34,6 +34,9 @@
     "slimerjs": {
       "path": "./site-cookbooks/slimerjs"
     },
+    "ssslimer": {
+      "path": "./site-cookbooks/ssslimer"
+    },
     "imagemagick": {
       "locked_version": "0.2.2"
     },
