@@ -10,6 +10,8 @@ Vagrant.configure('2') do |config|
     vb.customize ['modifyvm', :id, '--memory', '1024']
   end
 
+  # vagrant plugin install vagrant-digitalocean
+
   # vagrant plugin install vagrant-aws
   config.vm.provider :aws do |aws, override|
     aws.access_key_id     = settings['aws']['access_key_id']
