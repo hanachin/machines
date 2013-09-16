@@ -1,3 +1,15 @@
+digital_ocean:
+  client_id: YOUR_CLIENT_ID
+  api_key:   YOUR_API_KEY
+
+  machines:
+    defaults: &digital_ocean_machine_defaults
+      private_key_path: ~/.ssh/id_rsa
+      username: vagrant
+      image:    Ubuntu 12.04 x64
+      region:   San Francisco 1
+      size:     512MB
+
 aws:
   access_key_id:     YOUR_ACCESS_KEY_ID
   secret_access_key: YOUR_SECRET_ACCESS_KEY

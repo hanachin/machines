@@ -11,6 +11,19 @@ Vagrant.configure('2') do |config|
   end
 
   # vagrant plugin install vagrant-digitalocean
+  config.vm.provider :digital_ocean do |provider, override|
+    override.ssh.private_key_path = settings['digital_ocean']['machines']['defaults']['private_key_path']
+    override.ssh.username         = settings['digital_ocean']['machines']['defaults']['username']
+
+    override.vm.box = 'digital_ocean'
+    override.vm.box_url = 'https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box'
+
+    provider.client_id = settings['digital_ocean']['client_id']
+    provider.api_key   = settings['digital_ocean']['api_key']
+    provider.image     = settings['digital_ocean']['machines']['defaults']['image']
+    provider.region    = settings['digital_ocean']['machines']['defaults']['region']
+    provider.size      = settings['digital_ocean']['machines']['defaults']['size']
+  end
 
   # vagrant plugin install vagrant-aws
   config.vm.provider :aws do |aws, override|
@@ -38,6 +51,9 @@ Vagrant.configure('2') do |config|
       chef.data_bags_path = "data_bags"
       chef.add_role 'develop'
     end
+  end
+
+  config.vm.define :screenshot do |screenshot|
   end
 
   config.vm.define :remote do |remote|
