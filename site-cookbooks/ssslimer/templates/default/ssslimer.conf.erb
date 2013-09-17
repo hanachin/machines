@@ -1,0 +1,11 @@
+upstream ssslimer {
+  server localhost:5000;
+}
+
+server {
+  listen      80 default_server;
+  server_name slimer.snapwhim.com;
+  location / {
+    proxy_pass http://ssslimer/;
+  }
+}

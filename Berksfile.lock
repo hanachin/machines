@@ -97,6 +97,12 @@
     "xfs": {
       "locked_version": "1.1.0"
     },
+    "nginx": {
+      "locked_version": "1.8.0"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    },
     "chocolatey": {
       "locked_version": "0.0.5"
     },
