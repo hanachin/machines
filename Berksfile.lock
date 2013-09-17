@@ -43,6 +43,11 @@
     "phantomjs": {
       "locked_version": "1.0.2"
     },
+    "redis": {
+      "locked_version": "0.5.2",
+      "git": "git://github.com/phlipper/chef-redis.git",
+      "ref": "3bbde9e1c12e4938de0a7c075d2740ea076d7f9b"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },

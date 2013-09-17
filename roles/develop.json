@@ -43,7 +43,9 @@
     "imagemagick",
     "imagemagick::devel",
     "phantomjs::default",
-    "slimerjs"
+    "slimerjs",
+    "redis",
+    "redis::server"
   ],
   "env_run_lists": {
   }
