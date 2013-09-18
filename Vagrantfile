@@ -25,6 +25,18 @@ Vagrant.configure('2') do |config|
     provider.size      = settings['digital_ocean']['machines']['defaults']['size']
   end
 
+  config.vm.define :ny1 do |ny1|
+    ny1.vm.provider :digital_ocean do |provider, override|
+      provider.region = 'New York 1'
+    end
+  end
+
+  config.vm.define :ny2 do |ny2|
+    ny2.vm.provider :digital_ocean do |provider, override|
+      provider.region = 'New York 2'
+    end
+  end
+
   # vagrant plugin install vagrant-aws
   config.vm.provider :aws do |aws, override|
     aws.access_key_id     = settings['aws']['access_key_id']
@@ -37,6 +49,17 @@ Vagrant.configure('2') do |config|
     override.ssh.username         = settings['aws']['machines']['defaults']['username']
     override.ssh.private_key_path = settings['aws']['machines']['defaults']['private_key_path']
   end
+
+  config.vm.define :east do |east|
+    east.vm.provider :aws do |provider, override|
+      provider.region = 'us-east-1'
+      provider.ami    = 'ami-53b1ff3a'
+      provider.instance_type = 't1.micro'
+      provider.keypair_name = 'hanachin-us-east-1'
+      override.ssh.private_key_path = '~/Dropbox/hanachin-us-east-1.pem'
+    end
+  end
+
 
   config.vm.define :develop do |develop|
     develop.vm.box     = 'pricise64'
