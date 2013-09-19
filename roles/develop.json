@@ -3,6 +3,11 @@
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "tmux": {
+      "session_opts": {
+        "prefix": "C-t"
+      }
+    },
     "postgresql": {
       "password": {
         "postgres": "ilovepg"
