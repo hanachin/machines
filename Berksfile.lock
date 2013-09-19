@@ -51,6 +51,9 @@
     "postgresql": {
       "locked_version": "3.0.4"
     },
+    "unzip": {
+      "path": "./site-cookbooks/unzip"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },
