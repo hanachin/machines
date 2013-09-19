@@ -45,7 +45,8 @@
     "phantomjs::default",
     "slimerjs",
     "redis",
-    "redis::server"
+    "redis::server",
+    "tmux"
   ],
   "env_run_lists": {
   }

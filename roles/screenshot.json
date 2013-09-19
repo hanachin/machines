@@ -25,7 +25,8 @@
     "slimerjs",
     "ssslimer",
     "ruby_build",
-    "rbenv::user"
+    "rbenv::user",
+    "tmux"
   ],
   "env_run_lists": {
   }

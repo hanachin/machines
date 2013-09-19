@@ -25,7 +25,8 @@
     "rbenv::user",
     "imagemagick",
     "imagemagick::devel",
-    "unzip"
+    "unzip",
+    "tmux"
   ],
   "env_run_lists": {
   }
