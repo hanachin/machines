@@ -23,6 +23,8 @@
     "postgresql::client",
     "ruby_build",
     "rbenv::user",
+    "imagemagick",
+    "imagemagick::devel",
     "unzip"
   ],
   "env_run_lists": {
