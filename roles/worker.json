@@ -22,7 +22,8 @@
   "run_list": [
     "postgresql::client",
     "ruby_build",
-    "rbenv::user"
+    "rbenv::user",
+    "unzip"
   ],
   "env_run_lists": {
   }
