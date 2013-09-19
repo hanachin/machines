@@ -64,6 +64,12 @@ Vagrant.configure('2') do |config|
   config.vm.define :remote do |remote|
   end
 
+  config.vm.define :worker do |worker|
+    worker.vm.provider :digital_ocean do |provider, override|
+      provider.region = 'New York 1'
+    end
+  end
+
   # vagrant plugin install vagrant-omnibus
   config.omnibus.chef_version = '11.6.0'
 
