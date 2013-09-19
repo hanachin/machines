@@ -68,6 +68,12 @@ Vagrant.configure('2') do |config|
     worker.vm.provider :digital_ocean do |provider, override|
       provider.region = 'New York 1'
     end
+
+    worker.vm.provision :chef_solo do |chef|
+      chef.roles_path = "roles"
+      chef.data_bags_path = "data_bags"
+      chef.add_role 'worker'
+    end
   end
 
   # vagrant plugin install vagrant-omnibus

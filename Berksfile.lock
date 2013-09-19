@@ -48,6 +48,9 @@
       "git": "git://github.com/phlipper/chef-redis.git",
       "ref": "3bbde9e1c12e4938de0a7c075d2740ea076d7f9b"
     },
+    "postgresql": {
+      "locked_version": "3.0.4"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },
@@ -92,9 +95,6 @@
     },
     "openssl": {
       "locked_version": "1.1.0"
-    },
-    "postgresql": {
-      "locked_version": "3.0.4"
     },
     "aws": {
       "locked_version": "0.101.4"
