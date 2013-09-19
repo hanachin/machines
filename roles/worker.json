@@ -3,12 +3,26 @@
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "rbenv": {
+      "user_installs": [{
+        "user": "vagrant",
+        "rubies": ["2.0.0-p247"],
+        "global": "2.0.0-p247",
+        "gems": {
+          "2.0.0-p247": [
+            { "name": "bundler" }
+          ]
+        }
+      }]
+    }
   },
   "override_attributes": {
   },
   "chef_type": "role",
   "run_list": [
-    "postgresql::client"
+    "postgresql::client",
+    "ruby_build",
+    "rbenv::user"
   ],
   "env_run_lists": {
   }
