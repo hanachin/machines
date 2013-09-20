@@ -31,7 +31,8 @@
     "ssslimer",
     "ruby_build",
     "rbenv::user",
-    "tmux"
+    "tmux",
+    "swap"
   ],
   "env_run_lists": {
   }
