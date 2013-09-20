@@ -57,6 +57,9 @@
     "tmux": {
       "locked_version": "1.3.2"
     },
+    "swap": {
+      "path": "./site-cookbooks/swap"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },
