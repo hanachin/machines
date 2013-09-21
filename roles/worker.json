@@ -33,7 +33,9 @@
     "unzip",
     "tmux",
     "swap",
-    "xvfb"
+    "xvfb",
+    "slimerjs",
+    "ssslimer"
   ],
   "env_run_lists": {
   }
