@@ -53,14 +53,6 @@ Vagrant.configure('2') do |config|
     end
   end
 
-  config.vm.define :screenshot do |screenshot|
-    screenshot.vm.provision :chef_solo do |chef|
-      chef.roles_path = "roles"
-      chef.data_bags_path = "data_bags"
-      chef.add_role 'screenshot'
-    end
-  end
-
   config.vm.define :remote do |remote|
   end
 
