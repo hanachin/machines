@@ -60,6 +60,9 @@
     "swap": {
       "path": "./site-cookbooks/swap"
     },
+    "xvfb": {
+      "path": "./site-cookbooks/xvfb"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },
