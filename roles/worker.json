@@ -32,7 +32,8 @@
     "imagemagick::devel",
     "unzip",
     "tmux",
-    "swap"
+    "swap",
+    "xvfb"
   ],
   "env_run_lists": {
   }
