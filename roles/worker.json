@@ -37,7 +37,8 @@
     "slimerjs",
     "build-essential",
     "nginx::source",
-    "ssslimer"
+    "ssslimer",
+    "ssslimer::nginx-conf"
   ],
   "env_run_lists": {
   }
