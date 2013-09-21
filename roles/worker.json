@@ -35,6 +35,8 @@
     "swap",
     "xvfb",
     "slimerjs",
+    "build-essential",
+    "nginx::source",
     "ssslimer"
   ],
   "env_run_lists": {
