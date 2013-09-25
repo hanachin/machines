@@ -66,6 +66,9 @@
     "nginx": {
       "locked_version": "1.8.0"
     },
+    "root_ssh_agent": {
+      "path": "./site-cookbooks/root_ssh_agent"
+    },
     "ruby_build": {
       "locked_version": "0.8.0"
     },

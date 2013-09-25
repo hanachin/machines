@@ -52,7 +52,8 @@
     "redis",
     "redis::server",
     "tmux",
-    "swap"
+    "swap",
+    "root_ssh_agent"
   ],
   "env_run_lists": {
   }
