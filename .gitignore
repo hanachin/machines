@@ -1,3 +1,4 @@
 .vagrant
 /cookbooks/
 settings.yml
+data_bag_key
