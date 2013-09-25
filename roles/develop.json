@@ -37,6 +37,7 @@
   "run_list": [
     "chef-solo-search",
     "dev",
+    "dev::bring_repositories",
     "dev-database",
     "zsh",
     "oh-my-zsh",
