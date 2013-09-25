@@ -50,6 +50,7 @@ Vagrant.configure('2') do |config|
     develop.vm.synced_folder '~/work', '/vagrant_data'
     develop.vm.provision :chef_solo do |chef|
       chef.roles_path = "roles"
+      chef.encrypted_data_bag_secret_key_path = "data_bag_key"
       chef.data_bags_path = "data_bags"
       chef.add_role 'develop'
     end
@@ -62,6 +63,7 @@ Vagrant.configure('2') do |config|
 
     worker.vm.provision :chef_solo do |chef|
       chef.roles_path = "roles"
+      chef.encrypted_data_bag_secret_key_path = "data_bag_key"
       chef.data_bags_path = "data_bags"
       chef.add_role 'worker'
     end
