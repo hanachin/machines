@@ -8,7 +8,7 @@
 #
 git '/usr/local/ssslimer' do
    repository 'https://github.com/hanachin/ssslimer.git'
-   revision   's3upload'
+   revision   'master'
    action     :sync
    user       'root'
    group      'root'
