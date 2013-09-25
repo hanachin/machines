@@ -5,6 +5,9 @@
       "git": "git://github.com/edelight/chef-solo-search.git",
       "ref": "a28e7f25ab4afb53f9a55dd49d8b1277d0374c29"
     },
+    "ssh_known_hosts": {
+      "locked_version": "1.0.2"
+    },
     "heroku": {
       "path": "./site-cookbooks/heroku"
     },
@@ -68,6 +71,9 @@
     },
     "root_ssh_agent": {
       "path": "./site-cookbooks/root_ssh_agent"
+    },
+    "partial_search": {
+      "locked_version": "1.0.2"
     },
     "ruby_build": {
       "locked_version": "0.8.0"
