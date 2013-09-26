@@ -26,6 +26,7 @@
   "chef_type": "role",
   "run_list": [
     "repositories",
+    "heroku",
     "repositories::worker",
     "postgresql::client",
     "ruby_build",
