@@ -25,6 +25,8 @@
   },
   "chef_type": "role",
   "run_list": [
+    "repositories",
+    "repositories::worker",
     "postgresql::client",
     "ruby_build",
     "rbenv::user",

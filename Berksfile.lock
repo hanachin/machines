@@ -8,6 +8,9 @@
     "ssh_known_hosts": {
       "locked_version": "1.0.2"
     },
+    "repositories": {
+      "path": "./site-cookbooks/repositories"
+    },
     "heroku": {
       "path": "./site-cookbooks/heroku"
     },

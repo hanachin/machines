@@ -36,8 +36,9 @@
   "chef_type": "role",
   "run_list": [
     "chef-solo-search",
+    "repositories",
+    "repositories::develop",
     "dev",
-    "dev::bring_repositories",
     "dev-database",
     "zsh",
     "oh-my-zsh",

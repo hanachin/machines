@@ -1,0 +1,15 @@
+{
+  "name": "data_bag_item_repositories_develop",
+  "json_class": "Chef::DataBagItem",
+  "chef_type": "data_bag_item",
+  "data_bag": "repositories",
+  "raw_data": {
+    "id": "develop",
+    "repositories": {
+      "encrypted_data": "1L/8GCoAC67TINlHyMTsM7gh77jBwCV74RQSn1YXnob0iLzOUFhfKNl43zLd\n3+snL3TzRxg2ZySdiVVirXjftfrWa2bI8/bKW3lCl9kjwOF1XLWdDwsxqwKW\neiZEjL0wEXBcEqOe9sqavwmV/jlbr3CZ34YSje/20C/4/jcgLYzWvY9YzGMT\nxfMRojWSQ60oSYG57V+Q+W6meWsABe8vNw==\n",
+      "iv": "tNaMPPe7C7J8ky5MDuz9hw==\n",
+      "version": 1,
+      "cipher": "aes-256-cbc"
+    }
+  }
+}

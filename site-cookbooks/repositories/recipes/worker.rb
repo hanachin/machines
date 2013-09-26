@@ -1,7 +1,7 @@
 secret = Chef::EncryptedDataBagItem.load_secret "/tmp/encrypted_data_bag_secret"
-works  = Chef::EncryptedDataBagItem.load('repositories', 'works', secret)
+worker = Chef::EncryptedDataBagItem.load('repositories', 'worker', secret)
 
-works['repositories'].each do |location, c|
+worker['repositories'].each do |location, c|
   git location do
     repository c['repository']
     revision   c['revision']
@@ -10,3 +10,4 @@ works['repositories'].each do |location, c|
     group      c['group']
   end
 end
+
