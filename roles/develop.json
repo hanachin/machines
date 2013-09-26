@@ -44,6 +44,7 @@
     "oh-my-zsh",
     "dev-users",
     "heroku",
+    "heroku::netrc",
     "ruby_build",
     "rbenv::user",
     "nodejs",

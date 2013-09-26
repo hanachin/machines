@@ -27,6 +27,7 @@
   "run_list": [
     "repositories",
     "heroku",
+    "heroku::netrc",
     "repositories::worker",
     "postgresql::client",
     "ruby_build",
