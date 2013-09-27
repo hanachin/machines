@@ -41,9 +41,7 @@
     "xvfb",
     "slimerjs",
     "build-essential",
-    "nginx::source",
-    "ssslimer",
-    "ssslimer::nginx-conf"
+    "ssslimer"
   ],
   "env_run_lists": {
   }
