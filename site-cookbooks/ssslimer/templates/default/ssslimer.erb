@@ -1,0 +1,28 @@
+SLIMERJS=/usr/local/bin/slimerjs
+SSSLIMER=/usr/local/ssslimer/server.coffee
+PIDFILE=<%= @pid_path %>
+USER=<%= @user %>
+GROUP=<%= @group %>
+export DISPLAY=<%= @display %>
+
+case "$1" in
+  start)
+    echo -n "Starting slimerjs screenshot server"
+    start-stop-daemon --start --chuid=$USER:$GROUP --quiet --pidfile $PIDFILE --make-pidfile --background --exec $SLIMERJS -- $SSSLIMER
+    echo "."
+    ;;
+  stop)
+    echo -n "Stopping slimerjs screenshot server"
+    start-stop-daemon --stop --quiet --pidfile $PIDFILE
+    echo "."
+    ;;
+  restart)
+    $0 stop
+    $0 start
+    ;;
+  *)
+        echo "Usage: /etc/init.d/ssslimer {start|stop|restart}"
+        exit 1
+esac
+
+exit 0
