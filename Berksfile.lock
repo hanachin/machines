@@ -72,7 +72,7 @@
     "nginx": {
       "locked_version": "1.8.1",
       "git": "git://github.com/hanachin/nginx.git",
-      "ref": "76a287e7554b8e411039e0f00c99dbefbc1994d5"
+      "ref": "33a9372cba62ad1a74ecd411be35f36129983df5"
     },
     "root_ssh_agent": {
       "path": "./site-cookbooks/root_ssh_agent"
