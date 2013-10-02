@@ -9,7 +9,13 @@
 
 include_recipe 'apt'
 
-slimerjs_required_packages = %w(xvfb firefox dbus-x11 xserver-xorg-core xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic unzip)
+apt_repository 'multiverse' do
+  uri        'http://archive.ubuntu.com/ubuntu'
+  distribution 'precise'
+  components %w(multiverse)
+end
+
+slimerjs_required_packages = %w(xvfb firefox dbus-x11 xserver-xorg-core xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic unzip ttf-mscorefonts-installer)
 slimerjs_required_packages.each do |pkg|
   package pkg do
     action :install
