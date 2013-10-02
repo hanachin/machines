@@ -3,6 +3,7 @@ SSSLIMER=/usr/local/ssslimer/server.coffee
 PIDFILE=<%= @pid_path %>
 USER=<%= @user %>
 GROUP=<%= @group %>
+
 export DISPLAY=<%= @display %>
 
 case "$1" in
@@ -13,6 +14,7 @@ case "$1" in
     ;;
   stop)
     echo -n "Stopping slimerjs screenshot server"
+    pkill -P `cat $PIDFILE`
     start-stop-daemon --stop --quiet --pidfile $PIDFILE
     echo "."
     ;;
