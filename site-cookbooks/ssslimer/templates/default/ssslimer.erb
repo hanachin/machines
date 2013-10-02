@@ -16,6 +16,7 @@ case "$1" in
     echo -n "Stopping slimerjs screenshot server"
     pkill -P `cat $PIDFILE`
     start-stop-daemon --stop --quiet --pidfile $PIDFILE
+    rm $PIDFILE
     echo "."
     ;;
   restart)
