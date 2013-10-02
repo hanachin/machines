@@ -70,7 +70,9 @@
       "path": "./site-cookbooks/xvfb"
     },
     "nginx": {
-      "locked_version": "1.8.0"
+      "locked_version": "1.8.1",
+      "git": "git://github.com/hanachin/nginx.git",
+      "ref": "76a287e7554b8e411039e0f00c99dbefbc1994d5"
     },
     "root_ssh_agent": {
       "path": "./site-cookbooks/root_ssh_agent"
@@ -85,46 +87,46 @@
       "locked_version": "1.13.0"
     },
     "windows": {
-      "locked_version": "1.10.0"
+      "locked_version": "1.9.0"
     },
     "chef_handler": {
       "locked_version": "1.1.4"
     },
     "apt": {
-      "locked_version": "2.1.1"
+      "locked_version": "1.10.0"
     },
     "yum": {
-      "locked_version": "2.3.2"
+      "locked_version": "2.2.2"
     },
     "build-essential": {
-      "locked_version": "1.4.2"
+      "locked_version": "1.4.0"
     },
     "git": {
-      "locked_version": "2.6.0"
+      "locked_version": "2.5.0"
     },
     "dmg": {
-      "locked_version": "2.0.0"
+      "locked_version": "1.1.0"
     },
     "runit": {
-      "locked_version": "1.2.0"
+      "locked_version": "1.1.4"
     },
     "user": {
       "locked_version": "0.3.0"
     },
     "users": {
-      "locked_version": "1.5.2"
+      "locked_version": "1.5.0"
     },
     "database": {
       "locked_version": "1.4.0"
     },
     "mysql": {
-      "locked_version": "3.0.4"
+      "locked_version": "3.0.2"
     },
     "openssl": {
-      "locked_version": "1.1.0"
+      "locked_version": "1.0.2"
     },
     "aws": {
-      "locked_version": "0.101.4"
+      "locked_version": "0.101.2"
     },
     "xfs": {
       "locked_version": "1.1.0"
@@ -136,7 +138,7 @@
       "locked_version": "1.1.2"
     },
     "ohai": {
-      "locked_version": "1.1.12"
+      "locked_version": "1.1.8"
     }
   }
 }
