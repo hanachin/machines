@@ -10,4 +10,4 @@ default_attributes({
     }
   }
 })
-run_list 'nginx::source'
+run_list 'imagemagick', 'imagemagick::devel', 'nginx::source'
