@@ -87,46 +87,46 @@
       "locked_version": "1.13.0"
     },
     "windows": {
-      "locked_version": "1.9.0"
+      "locked_version": "1.10.0"
     },
     "chef_handler": {
       "locked_version": "1.1.4"
     },
     "apt": {
-      "locked_version": "1.10.0"
+      "locked_version": "2.2.0"
     },
     "yum": {
-      "locked_version": "2.2.2"
+      "locked_version": "2.3.2"
     },
     "build-essential": {
-      "locked_version": "1.4.0"
+      "locked_version": "1.4.2"
     },
     "git": {
-      "locked_version": "2.5.0"
+      "locked_version": "2.7.0"
     },
     "dmg": {
-      "locked_version": "1.1.0"
+      "locked_version": "2.0.2"
     },
     "runit": {
-      "locked_version": "1.1.4"
+      "locked_version": "1.2.0"
     },
     "user": {
       "locked_version": "0.3.0"
     },
     "users": {
-      "locked_version": "1.5.0"
+      "locked_version": "1.5.2"
     },
     "database": {
-      "locked_version": "1.4.0"
+      "locked_version": "1.5.0"
     },
     "mysql": {
-      "locked_version": "3.0.2"
+      "locked_version": "3.0.4"
     },
     "openssl": {
-      "locked_version": "1.0.2"
+      "locked_version": "1.1.0"
     },
     "aws": {
-      "locked_version": "0.101.2"
+      "locked_version": "0.101.6"
     },
     "xfs": {
       "locked_version": "1.1.0"
@@ -138,7 +138,7 @@
       "locked_version": "1.1.2"
     },
     "ohai": {
-      "locked_version": "1.1.8"
+      "locked_version": "1.1.12"
     }
   }
 }
