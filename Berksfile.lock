@@ -70,7 +70,9 @@
       "path": "./site-cookbooks/xvfb"
     },
     "nginx": {
-      "locked_version": "1.8.0"
+      "locked_version": "1.8.1",
+      "git": "git://github.com/hanachin/nginx.git",
+      "ref": "f1595aa3a74668da12ad3eb69acc3f1473f956f5"
     },
     "root_ssh_agent": {
       "path": "./site-cookbooks/root_ssh_agent"
@@ -91,7 +93,7 @@
       "locked_version": "1.1.4"
     },
     "apt": {
-      "locked_version": "2.1.1"
+      "locked_version": "2.2.0"
     },
     "yum": {
       "locked_version": "2.3.2"
@@ -100,10 +102,10 @@
       "locked_version": "1.4.2"
     },
     "git": {
-      "locked_version": "2.6.0"
+      "locked_version": "2.7.0"
     },
     "dmg": {
-      "locked_version": "2.0.0"
+      "locked_version": "2.0.2"
     },
     "runit": {
       "locked_version": "1.2.0"
@@ -115,7 +117,7 @@
       "locked_version": "1.5.2"
     },
     "database": {
-      "locked_version": "1.4.0"
+      "locked_version": "1.5.0"
     },
     "mysql": {
       "locked_version": "3.0.4"
@@ -124,7 +126,7 @@
       "locked_version": "1.1.0"
     },
     "aws": {
-      "locked_version": "0.101.4"
+      "locked_version": "0.101.6"
     },
     "xfs": {
       "locked_version": "1.1.0"

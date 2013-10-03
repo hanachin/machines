@@ -69,6 +69,17 @@ Vagrant.configure('2') do |config|
     end
   end
 
+  config.vm.define :image do |image|
+    image.vm.provider :digital_ocean do |provider, override|
+      provider.region = 'New York 1'
+    end
+
+    image.vm.provision :chef_solo do |chef|
+      chef.roles_path = "roles"
+      chef.add_role 'image-process-server'
+    end
+  end
+
   # vagrant plugin install vagrant-omnibus
   config.omnibus.chef_version = '11.6.0'
 
