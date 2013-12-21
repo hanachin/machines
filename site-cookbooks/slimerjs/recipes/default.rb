@@ -22,11 +22,11 @@ slimerjs_required_packages.each do |pkg|
   end
 end
 
-slimerjs_version  = '0.8.2'
-slimerjs_dirname  = 'slimerjs-0.8.2'
-slimerjs_filename = 'slimerjs-0.8.2.zip'
-slimerjs_base_url = 'http://download.slimerjs.org/v0.8/'
-slimerjs_checksum = '18066ada8e3735f1a2722b104f13201c57136375'
+slimerjs_version  = '0.9.0rc1'
+slimerjs_dirname  = 'slimerjs-0.9.0rc1'
+slimerjs_filename = 'slimerjs-0.9.0rc1.zip'
+slimerjs_base_url = 'http://download.slimerjs.org/v0.9/0.9.0rc1/'
+slimerjs_checksum = 'd0c8ab594f63fcc5465d6c0b3448db06ba5d7286'
 slimerjs_src_dir  = '/usr/local/src'
 
 remote_file "#{slimerjs_src_dir}/#{slimerjs_filename}" do
@@ -36,7 +36,7 @@ remote_file "#{slimerjs_src_dir}/#{slimerjs_filename}" do
   group    'root'
   mode     '0644'
   action   :touch
-  not_if   { ::File.exists?('/usr/local/bin/slimerjs') && `/usr/local/bin/slimerjs --version`.match(/SlimerJS (\d+\.\d+\.\d+)/)[1] == slimerjs_version }
+  not_if   { ::File.exists?('/usr/local/bin/slimerjs') && `/usr/local/bin/slimerjs --version`.match(/SlimerJS (\d+\.\d+\.\d+(?:rc\d+))/)[1] == slimerjs_version }
   notifies :run, 'execute[slimerjs-install]', :immediately
 end
 
