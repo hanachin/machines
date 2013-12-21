@@ -36,7 +36,7 @@ remote_file "#{slimerjs_src_dir}/#{slimerjs_filename}" do
   group    'root'
   mode     '0644'
   action   :touch
-  not_if   { ::File.exists?('/usr/local/bin/slimerjs') && `/usr/local/bin/slimerjs --version`.match(/SlimerJS (\d+\.\d+\.\d+(?:rc\d+))/)[1] == slimerjs_version }
+  not_if   { ::File.exists?('/usr/local/bin/slimerjs') && (matched = `/usr/local/bin/slimerjs --version`.match(/SlimerJS (\d+\.\d+\.\d+(?:rc\d+))/)) && matched[1] == slimerjs_version }
   notifies :run, 'execute[slimerjs-install]', :immediately
 end
 
