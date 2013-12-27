@@ -1,4 +1,4 @@
-secret  = Chef::EncryptedDataBagItem.load_secret "/tmp/encrypted_data_bag_secret"
+secret  = Chef::EncryptedDataBagItem.load_secret File.expand_path "~/chef-solo/data_bag_key"
 heroku = Chef::EncryptedDataBagItem.load('passwords', 'heroku', secret)
 
 template '/home/vagrant/.netrc' do
