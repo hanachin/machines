@@ -4,11 +4,11 @@ brew 'brew-cask'
 brew 'emacs'
 brew 'zsh'
 
-brew 'readline'
+# brew 'readline'
 brew 'rbenv'
 brew 'ruby-build'
 
-brew 'postgresql'
+# brew 'postgresql'
 brew 'imagemagick'
 
 brew 'phantomjs'
